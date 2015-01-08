@@ -1,0 +1,23 @@
+{
+  "name": "My_spectacular_weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "commander": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gingermamba32/My_Weather.git"
+  },
+  "author": "Michael_Montero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gingermamba32/My_Weather/issues"
+  },
+  "homepage": "https://github.com/gingermamba32/My_Weather"
+}
