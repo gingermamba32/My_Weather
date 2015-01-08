@@ -1,3 +1,23 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 //   ./that_file
-console.log(process.argv);
+
+//*module dependencies
+var program = require ('commander');
+
+program
+	.version('0.0.1')
+	.option('-c, --cold, cold', 'its cold')
+	.option('-s, --snow, snow', 'its snowing')
+	.option('-h, --hot, hot', 'its hot')
+	.option('-w, --wet [type]', 'Add specific precipitation [marble]')
+	.parse(process.argv);
+
+console.log('The weather today looks as if: ');
+	if (program.cold) console.log('its fucking cold');
+	if (program.snow) console.log('its actually snowing out');
+	if (program.hot) console.log('its way too hot. Turn the fan on!!');
+	if (program.wet) console.log(' - %s type of precipitation');
+
+
+
+//--help and --version work as command line tools
